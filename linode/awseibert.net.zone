@@ -1,0 +1,78 @@
+; Domain: awseibert.net
+; Exported (y-m-d hh:mm:ss): 2011-05-04 19:44:33
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+; SOA Record
+AWSEIBERT.NET.	3600	IN	SOA	ns49.domaincontrol.com.	dns.jomax.net (
+				2011032701
+				28800
+				7200
+				604800
+				86400
+				)
+
+; A Records
+@	1800	IN	A	173.203.29.8
+leda	3600	IN	A	173.203.29.8
+deimos	3600	IN	A	206.174.130.45
+
+; CNAME Records
+mail	3600	IN	CNAME	ghs.google.com
+start	3600	IN	CNAME	ghs.google.com
+calendar	3600	IN	CNAME	ghs.google.com
+docs	3600	IN	CNAME	ghs.google.com
+phobos	3600	IN	CNAME	awseibert1.dnsalias.com
+new	3600	IN	CNAME	leda.awseibert.net
+blog	3600	IN	CNAME	leda.awseibert.net
+www	3600	IN	CNAME	leda.awseibert.net
+www.blog	3600	IN	CNAME	leda.awseibert.net
+tech	3600	IN	CNAME	leda.awseibert.net
+home	3600	IN	CNAME	awseibert1.no-ip.org
+
+; MX Records
+@	3600	IN	MX	10	alt1.aspmx.l.google.com
+@	3600	IN	MX	20	alt2.aspmx.l.google.com
+@	3600	IN	MX	30	aspmx2.googlemail.com
+@	3600	IN	MX	40	aspmx3.googlemail.com
+
+; TXT Records
+google._domainkey	3600	IN	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChHM7JOVUV0Bwr1KE8E7VKKaGj7bbGSo2ObdQs7m6io48ZwR2Mgt66oCDXOssyhF4Zk3xX+J87em7R0kAmTbKii4eyCioPE86W90gz+BaJZo7rqHT0eL+qxhA/xWRHPPvVNxwcroXTG/TocIMNTePySuK44XvbbNreAFmFsOomnQIDAQAB"
+
+; SRV Records
+_xmpp-server._tcp.@	3600	IN	SRV	5	0	5269	xmpp-server.l.google.com
+_xmpp-server._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server1.l.google.com
+_xmpp-server._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server2.l.google.com
+_xmpp-server._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server3.l.google.com
+_xmpp-server._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server4.l.google.com
+_jabber._tcp.@	3600	IN	SRV	5	0	5269	xmpp-server.l.google.com
+_jabber._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server1.l.google.com
+_jabber._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server2.l.google.com
+_jabber._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server3.l.google.com
+_jabber._tcp.@	3600	IN	SRV	20	0	5269	xmpp-server4.l.google.com
+
+; NS Records
+@	3600	IN	NS	ns49.domaincontrol.com
+@	3600	IN	NS	ns50.domaincontrol.com
